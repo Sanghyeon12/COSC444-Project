@@ -14,6 +14,7 @@ DNA / Protein motif scanner using regular expressions and FASTA input.
 - `tests/`: unit tests
 
 --Responsibilities by Area--
+
 Jash - IO & Data
  src/io/fasta_reader.py – FASTA parsing
 

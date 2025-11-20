@@ -1,0 +1,5 @@
+{
+  "N_glycosylation": "N[^P][ST][^P]",
+  "Proline_directed_phospho": "[ST]P",
+  "RGD_integrin_binding": "RGD"
+}

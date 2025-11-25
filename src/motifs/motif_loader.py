@@ -20,19 +20,13 @@ from .iupac import iupac_to_regex
 
 
 def _motifs_dir() -> Path:
-    """Return the path to the top-level ``motifs/`` directory.
-
-    This walks up from the current file until it finds a ``motifs`` folder.
-    It keeps the project layout flexible and works when running tests from
-    the repository root.
-    """
+    """Return the path to the top-level ``motifs/`` directory."""
     here = Path(__file__).resolve()
     for parent in here.parents:
         candidate = parent / "motifs"
-        if candidate.is_dir():
+        if candidate.is_dir() and (candidate / "dna.json").is_file() and (candidate / "protein.json").is_file():
             return candidate
-    # If we get here something is wrong with the checkout / install
-    raise RuntimeError("Could not locate 'motifs' directory relative to motifs package")
+    raise RuntimeError("Could not locate top-level 'motifs' directory containing dna.json / protein.json")
 
 
 def _load_raw_json(kind: str) -> Dict[str, str]:

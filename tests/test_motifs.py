@@ -21,7 +21,7 @@ def test_iupac_protein_expansion_basic():
     regex = iupac_to_regex("AXZB", "protein")
     # exact string is stable and easy to assert on
     assert regex == "A[ACDEFGHIKLMNPQRSTVWY][EQ][DN]"
-    assert re.fullmatch(regex, "AWEQ")
+    assert re.fullmatch(regex, "AWED")
     assert re.fullmatch(regex, "ANQD")
     assert re.fullmatch(regex, "AKEN")
 

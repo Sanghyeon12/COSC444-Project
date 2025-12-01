@@ -1,78 +1,86 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Literal, Set
-
-AlphabetType = Literal["DNA", "PROTEIN", "UNKNOWN"]
-
-
-DNA_ALPHABET: Set[str] = {"A", "C", "G", "T"}
-
-# 20 standard amino acids
-PROTEIN_ALPHABET: Set[str] = {
-    "A", "R", "N", "D", "C",
-    "Q", "E", "G", "H", "I",
-    "L", "K", "M", "F", "P",
-    "S", "T", "W", "Y", "V",
-}
-
-# Optional common ambiguous codes if you want to allow them later
-DNA_AMBIGUOUS: Set[str] = {"N"}  # keep minimal unless assignment says otherwise
-PROTEIN_AMBIGUOUS: Set[str] = {"X"}  # unknown amino acid
+from pathlib import Path
+from typing import Iterable, Iterator, List, Optional, TextIO, Union
 
 
 @dataclass(frozen=True)
-class Alphabet:
-    name: str
-    symbols: Set[str]
+class FastaRecord:
+    """A single FASTA record."""
+    id: str
+    description: str
+    sequence: str
 
-    def normalize(self, seq: str) -> str:
-        return seq.strip().upper()
-
-    def validate(self, seq: str, allow_ambiguous: bool = False) -> bool:
-        s = self.normalize(seq)
-        if not s:
-            return False
-        allowed = set(self.symbols)
-        if allow_ambiguous:
-            if self.name == "DNA":
-                allowed |= DNA_AMBIGUOUS
-            elif self.name == "PROTEIN":
-                allowed |= PROTEIN_AMBIGUOUS
-        return all(ch in allowed for ch in s)
+    @property
+    def header(self) -> str:
+        return f">{self.id} {self.description}".rstrip()
 
 
-DNA = Alphabet("DNA", DNA_ALPHABET)
-PROTEIN = Alphabet("PROTEIN", PROTEIN_ALPHABET)
+def _iter_fasta_lines(handle: TextIO) -> Iterator[str]:
+    """Yield non-empty, stripped lines from a FASTA stream."""
+    for raw in handle:
+        line = raw.strip()
+        if not line:
+            continue
+        yield line
 
 
-def detect_alphabet(seq: str, allow_ambiguous: bool = False) -> AlphabetType:
+def parse_fasta(handle: TextIO) -> Iterator[FastaRecord]:
     """
-    Guess whether a sequence is DNA or protein.
+    Parse a FASTA stream into FastaRecord objects.
 
-    Heuristic:
-    - If all chars are valid DNA -> DNA
-    - Else if all chars are valid protein -> PROTEIN
-    - Else UNKNOWN
-
-    This works well for mixed FASTA datasets.
+    Rules:
+    - Lines starting with '>' begin a new record.
+    - Sequence lines may be multiline.
+    - Sequences are uppercased and whitespace removed.
+    - Raises ValueError if format is invalid.
     """
-    s = seq.strip().upper()
-    if not s:
-        return "UNKNOWN"
+    seq_id: Optional[str] = None
+    desc: str = ""
+    seq_chunks: List[str] = []
 
-    if DNA.validate(s, allow_ambiguous=allow_ambiguous):
-        return "DNA"
-    if PROTEIN.validate(s, allow_ambiguous=allow_ambiguous):
-        return "PROTEIN"
-    return "UNKNOWN"
+    for line in _iter_fasta_lines(handle):
+        if line.startswith(">"):
+            # Emit previous record if present
+            if seq_id is not None:
+                sequence = "".join(seq_chunks).upper()
+                if not sequence:
+                    raise ValueError(f"Empty sequence for FASTA record '{seq_id}'.")
+                yield FastaRecord(seq_id, desc, sequence)
+
+            # Start new record
+            header = line[1:].strip()
+            if not header:
+                raise ValueError("FASTA header line '>' must be followed by an identifier.")
+            parts = header.split(maxsplit=1)
+            seq_id = parts[0]
+            desc = parts[1] if len(parts) > 1 else ""
+            seq_chunks = []
+        else:
+            if seq_id is None:
+                raise ValueError("Found sequence data before first FASTA header ('>').")
+            seq_chunks.append(line.replace(" ", "").replace("\t", ""))
+
+    # Emit last record
+    if seq_id is not None:
+        sequence = "".join(seq_chunks).upper()
+        if not sequence:
+            raise ValueError(f"Empty sequence for FASTA record '{seq_id}'.")
+        yield FastaRecord(seq_id, desc, sequence)
 
 
-def validate_sequence(seq: str, alphabet: Alphabet, allow_ambiguous: bool = False) -> None:
-    """Raise ValueError if sequence violates the alphabet."""
-    if not alphabet.validate(seq, allow_ambiguous=allow_ambiguous):
-        bad = sorted(set(seq.upper()) - alphabet.symbols)
-        raise ValueError(
-            f"Invalid symbols for {alphabet.name}: {bad}. "
-            f"Allowed: {sorted(alphabet.symbols)}"
-        )
+def read_fasta(
+    source: Union[str, Path, TextIO]
+) -> List[FastaRecord]:
+    """
+    Read FASTA records from a file path or an already-open handle.
+
+    Returns a list for convenience.
+    """
+    if hasattr(source, "read"):
+        return list(parse_fasta(source))  # type: ignore[arg-type]
+
+    path = Path(source)
+    with path.open("r", encoding="utf-8") as f:
+        return list(parse_fasta(f))

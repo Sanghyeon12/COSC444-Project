@@ -76,7 +76,8 @@ def read_fasta(
     """
     Read FASTA records from a file path or an already-open handle.
 
-    Returns a list for convenience.
+    Returns a list of FastaRecord objects.
+    For tuple format (seq_id, sequence), use: [(r.id, r.sequence) for r in read_fasta(...)]
     """
     if hasattr(source, "read"):
         return list(parse_fasta(source))  # type: ignore[arg-type]

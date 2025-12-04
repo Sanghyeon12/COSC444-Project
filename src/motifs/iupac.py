@@ -102,7 +102,7 @@ def iupac_to_regex(pattern: str, kind: str) -> str:
     table = _lookup_table(kind)
     out_parts: list[str] = []
 
-    META_CHARS = ".^$*+?{}[]|()\\\\"  # 기본 regex 메타 문자들
+    META_CHARS = ".^$*+?{}[]|()\\"  # Basic regex metacharacters
 
     for ch in pattern:
         # Leave regex metacharacters alone – we only expand bare IUPAC codes.

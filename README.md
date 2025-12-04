@@ -1,8 +1,30 @@
-# COSC444-Project
+# COSC444 Project
 
 DNA / Protein motif scanner using regular expressions and FASTA input.
 
+This tool loads motifs from JSON, converts them to regex, scans sequences from FASTA files, and reports all matched positions. It also includes simple baseline and evaluation modules.
+
 ## Layout
+
+## Running the Scanner
+
+Run the main program from the project root:
+
+
+This will:
+
+1. Load the FASTA file  
+2. Load motifs from JSON  
+3. Scan each sequence  
+4. Save results to `out/`
+
+## Output Files
+- `matches.tsv`  
+- `summary.tsv`  
+- `baseline.tsv`  
+
+## Requirements
+pip install -r requirements.txt
 
 - `src/io`: FASTA + alphabet handling
 - `src/motifs`: motif definitions + IUPAC handling

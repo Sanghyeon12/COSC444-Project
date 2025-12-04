@@ -1,0 +1,41 @@
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+
+# ===== Python bytecode =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+
+# Test / coverage outputs
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Type checker / analyzer caches
+.mypy_cache/
+.pyre/
+.pytype/
+
+# ===== IDE / editor settings =====
+# VS Code
+.vscode/
+
+# IntelliJ / PyCharm
+.idea/
+*.iml
+
+# ===== Logs / temp files =====
+*.log
+*.tmp
+*.swp
+*.swo
+
+.env

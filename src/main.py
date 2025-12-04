@@ -1,50 +1,3 @@
-# main.py – Sadman (Person 3)
-import argparse
-from io import fasta_reader
-from motifs import motif_loader
-from scan import scanner, report
-
-def load_data(fasta_path, motif_path):
-    sequences = fasta_reader.read_fasta(fasta_path)
-    motifs = motif_loader.load_motifs(motif_path)
-    return sequences, motifs
-
-def run_scan(sequences, motifs, allow_overlap, revcomp):
-    results = {}
-    for seq_id, seq in sequences.items():
-        hits = scanner.scan_sequence(seq_id, seq, motifs, allow_overlap, revcomp)
-        results[seq_id] = hits
-    return results
-
-def main():
-    p = argparse.ArgumentParser(description="Motif scanning tool")
-    p.add_argument("--fasta", required=True, help="Input FASTA file")
-    p.add_argument("--motifs", required=True, help="Motif JSON file")
-    p.add_argument("--out", required=True, help="Output file")
-    p.add_argument("--summary", action="store_true", help="Write summary instead of detailed matches")
-    p.add_argument("--no-overlap", action="store_true", help="Disallow overlapping matches")
-    p.add_argument("--revcomp", action="store_true", help="Scan reverse complement also")
-
-    args = p.parse_args()
-
-    sequences, motifs = load_data(args.fasta, args.motifs)
-
-    results = run_scan(
-        sequences,
-        motifs,
-        allow_overlap=not args.no_overlap,
-        revcomp=args.revcomp
-    )
-
-    if args.summary:
-        report.write_summary(args.out, results)
-    else:
-        report.write_matches(args.out, results)
-
-    print("Done.")
-
-if __name__ == "__main__":
-    main()
 """
 src/main.py
 
@@ -61,6 +14,13 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Mapping, Sequence, Tuple, Any
 import re
+import sys
+
+# Add project root to path for direct execution
+if __name__ == "__main__":
+    project_root = Path(__file__).resolve().parent.parent
+    if str(project_root) not in sys.path:
+        sys.path.insert(0, str(project_root))
 
 from src.motifs import load_motifs
 from src.io.alphabet import detect_kind
@@ -298,7 +258,9 @@ def main(argv: Sequence[str] | None = None) -> int:
             raise SystemExit(f"Unknown motif: {args.motif!r}")
 
     fasta_records = read_fasta(fasta_path)
-    records = build_records(fasta_records)
+    # Convert FastaRecord objects to (seq_id, sequence) tuples
+    fasta_tuples = [(rec.id, rec.sequence) for rec in fasta_records]
+    records = build_records(fasta_tuples)
     matches = run_scan(records, dna_motifs, protein_motifs)
 
     write_matches_txt(outdir / "matches.txt", fasta_path=fasta_path, mode=args.mode.upper(),

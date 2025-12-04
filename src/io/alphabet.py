@@ -51,20 +51,62 @@ def detect_alphabet(seq: str, allow_ambiguous: bool = False) -> AlphabetType:
     Guess whether a sequence is DNA or protein.
 
     Heuristic:
-    - If all chars are valid DNA -> DNA
-    - Else if all chars are valid protein -> PROTEIN
-    - Else UNKNOWN
+    - If sequence contains protein-only characters (not in DNA alphabet):
+      * If it also has a significant proportion of A, C, G, T (DNA-like), it's mixed -> UNKNOWN
+      * Otherwise, if valid protein -> PROTEIN
+    - If sequence only contains characters in DNA alphabet (A, C, G, T):
+      * If valid DNA -> DNA
+    - Otherwise -> UNKNOWN
 
-    This works well for mixed FASTA datasets.
+    Note: Since A, C, G, T are in both alphabets, sequences with only these
+    characters will be classified as DNA. Sequences with protein-specific
+    amino acids will be classified as PROTEIN unless they look mixed.
     """
     s = seq.strip().upper()
     if not s:
         return "UNKNOWN"
 
-    if DNA.validate(s, allow_ambiguous=allow_ambiguous):
+    # Characters that are in protein alphabet but not in DNA alphabet
+    protein_only_chars = PROTEIN_ALPHABET - DNA_ALPHABET
+    
+    # Check what characters are present
+    seq_chars = set(s)
+    has_protein_only = bool(seq_chars & protein_only_chars)
+    
+    # Check validation
+    is_valid_dna = DNA.validate(s, allow_ambiguous=allow_ambiguous)
+    is_valid_protein = PROTEIN.validate(s, allow_ambiguous=allow_ambiguous)
+    
+    # If sequence contains protein-only characters
+    if has_protein_only:
+        # Count how many characters are DNA-only (A, C, G, T) vs protein-only
+        dna_char_count = sum(1 for ch in s if ch in DNA_ALPHABET)
+        protein_only_count = sum(1 for ch in s if ch in protein_only_chars)
+        
+        # If it has a significant mix of both types, it's ambiguous
+        # (e.g., "ACGTMK" has 4 DNA chars and 2 protein-only chars)
+        if dna_char_count > 0 and protein_only_count > 0:
+            # Check if it looks like a short mixed sequence (ambiguous)
+            # vs a longer protein sequence (where T is just threonine)
+            if len(s) <= 10 and dna_char_count >= 2:
+                # Short sequence with mix -> likely mixed/unknown
+                return "UNKNOWN"
+            # Longer sequences with T are likely protein (T = threonine)
+            if is_valid_protein:
+                return "PROTEIN"
+            return "UNKNOWN"
+        
+        # Only protein-only chars (shouldn't happen in practice)
+        if is_valid_protein:
+            return "PROTEIN"
+        return "UNKNOWN"
+    
+    # Sequence only contains A, C, G, T (all valid in both alphabets)
+    # Default to DNA for sequences with only these characters
+    if is_valid_dna:
         return "DNA"
-    if PROTEIN.validate(s, allow_ambiguous=allow_ambiguous):
-        return "PROTEIN"
+    
+    # Not valid DNA either
     return "UNKNOWN"
 
 
@@ -76,3 +118,24 @@ def validate_sequence(seq: str, alphabet: Alphabet, allow_ambiguous: bool = Fals
             f"Invalid symbols for {alphabet.name}: {bad}. "
             f"Allowed: {sorted(alphabet.symbols)}"
         )
+
+
+def detect_kind(seq: str) -> str:
+    """
+    Detect if a sequence is DNA or protein, returning lowercase string.
+
+    This is a convenience wrapper around detect_alphabet that returns
+    lowercase "dna" or "protein" (or "unknown") for compatibility with main.py.
+
+    Parameters
+    ----------
+    seq : str
+        The sequence to classify.
+
+    Returns
+    -------
+    str
+        One of "dna", "protein", or "unknown" (all lowercase).
+    """
+    result = detect_alphabet(seq)
+    return result.lower() if result != "UNKNOWN" else "unknown"

@@ -1,0 +1,51 @@
+DNA/Protein Motif Scanner - Summary
+Input FASTA: data/demo_mixed.fasta
+Mode      : MULTI
+Indexing  : 1-based positions, end inclusive
+
+============================================================
+TOTALS BY KIND
+------------------------------------------------------------
+DNA sequences      : 3
+Protein sequences  : 3
+Total sequences    : 6
+
+Total matches (DNA)     : 9
+Total matches (Protein) : 29
+Total matches (All)     : 38
+
+============================================================
+TOTALS BY MOTIF (ALL SEQUENCES)
+------------------------------------------------------------
+DNA motifs
+  - TATA_box               : 0
+  - polyA_signal           : 2
+  - EcoRI_site             : 7
+
+Protein motifs
+  - N_glycosylation        : 20
+  - Proline_directed_phospho : 4
+  - RGD_integrin_binding   : 5
+
+============================================================
+COUNTS PER SEQUENCE
+------------------------------------------------------------
+dna_seq1_promoter_like
+  TATA_box=0, polyA_signal=1, EcoRI_site=4   | DNA_total=5
+
+dna_seq2_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=2   | DNA_total=2
+
+dna_seq3_short
+  TATA_box=0, polyA_signal=1, EcoRI_site=1   | DNA_total=2
+
+prot_seq1_kinase_like
+  N_glycosylation=5, Proline_directed_phospho=3, RGD_integrin_binding=3   | PROTEIN_total=11
+
+prot_seq2_glycoprotein_like
+  N_glycosylation=13, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=14
+
+prot_seq3_short
+  N_glycosylation=2, Proline_directed_phospho=1, RGD_integrin_binding=1   | PROTEIN_total=4
+
+======================== END OF SUMMARY ========================

@@ -1,0 +1,34 @@
+DNA/Protein Motif Scanner - Randomized Baseline Comparison
+Input FASTA       : data/demo_mixed.fasta
+Randomization     : per-sequence shuffle (preserve composition), same lengths
+Trials            : 100
+Random seed       : 42
+Mode              : MULTI
+Metric            : count of motif matches
+
+============================================================
+MOTIF BASELINE TABLE (Real vs Randomized)
+------------------------------------------------------------
+Columns:
+  real_count | random_mean | random_std | random_min | random_max | lift(real/mean)
+
+EcoRI_site
+  real_count=7  random_mean=0.04  random_std=0.24  min=0  max=2  lift=175.00
+N_glycosylation
+  real_count=20  random_mean=7.14  random_std=1.71  min=3  max=12  lift=2.80
+Proline_directed_phospho
+  real_count=4  random_mean=2.47  random_std=1.22  min=0  max=6  lift=1.62
+RGD_integrin_binding
+  real_count=5  random_mean=0.01  random_std=0.10  min=0  max=1  lift=500.00
+TATA_box
+  real_count=0  random_mean=0.07  random_std=0.29  min=0  max=2  lift=0.00
+polyA_signal
+  real_count=2  random_mean=0.13  random_std=0.34  min=0  max=1  lift=15.38
+
+============================================================
+INTERPRETATION (short)
+------------------------------------------------------------
+If lift > 1, the motif appears more often in real sequences than in shuffled controls.
+Very large lift usually means the motif is highly structured (not just random chance).
+
+======================== END OF BASELINE ========================

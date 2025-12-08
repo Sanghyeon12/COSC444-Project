@@ -13,17 +13,17 @@ Columns:
   real_count | random_mean | random_std | random_min | random_max | lift(real/mean)
 
 EcoRI_site
-  real_count=7  random_mean=0.04  random_std=0.24  min=0  max=2  lift=175.00
+  real_count=28  random_mean=2.25  random_std=1.67  min=0  max=9  lift=12.44
 N_glycosylation
-  real_count=20  random_mean=7.14  random_std=1.71  min=3  max=12  lift=2.80
+  real_count=139  random_mean=90.05  random_std=8.35  min=70  max=114  lift=1.54
 Proline_directed_phospho
-  real_count=4  random_mean=2.47  random_std=1.22  min=0  max=6  lift=1.62
+  real_count=77  random_mean=86.65  random_std=7.64  min=65  max=106  lift=0.89
 RGD_integrin_binding
-  real_count=5  random_mean=0.01  random_std=0.10  min=0  max=1  lift=500.00
+  real_count=38  random_mean=1.42  random_std=1.12  min=0  max=5  lift=26.76
 TATA_box
-  real_count=0  random_mean=0.07  random_std=0.29  min=0  max=2  lift=0.00
+  real_count=47  random_mean=21.81  random_std=4.47  min=12  max=33  lift=2.15
 polyA_signal
-  real_count=2  random_mean=0.13  random_std=0.34  min=0  max=1  lift=15.38
+  real_count=9  random_mean=14.90  random_std=3.60  min=8  max=24  lift=0.60
 
 ============================================================
 INTERPRETATION (short)

@@ -5,22 +5,295 @@ Mode      : MULTI
 Indexing  : 1-based positions, end inclusive
 
 ============================================================
-> dna_seq1_promoter_like   kind=DNA   length=134
+> dna_seq001_promoter_like   kind=DNA   length=130
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=8  end=14  match=TATAAAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=63  end=68  match=GAATTC
+
+============================================================
+> dna_seq002_random_like   kind=DNA   length=94
 ------------------------------------------------------------
 [TATA_box] regex=TATA[AT]A[AT]   hits=0
   (no matches)
 
-[polyA_signal] regex=AATAAA   hits=1
-  - hit#1  start=31  end=36  match=AATAAA
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
 
-[EcoRI_site] regex=GAATTC   hits=4
-  - hit#1  start=7  end=12  match=GAATTC
-  - hit#2  start=54  end=59  match=GAATTC
-  - hit#3  start=81  end=86  match=GAATTC
-  - hit#4  start=109  end=114  match=GAATTC
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
 
 ============================================================
-> dna_seq2_random_like   kind=DNA   length=133
+> dna_seq003_gc_rich   kind=DNA   length=133
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq004_at_rich   kind=DNA   length=123
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq005_repeat_like   kind=DNA   length=111
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq006_palindrome_like   kind=DNA   length=101
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq007_promoter_like   kind=DNA   length=109
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=87  end=93  match=TATATAA
+
+[polyA_signal] regex=AATAAA   hits=1
+  - hit#1  start=78  end=83  match=AATAAA
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq008_random_like   kind=DNA   length=91
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq009_gc_rich   kind=DNA   length=135
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq010_at_rich   kind=DNA   length=106
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=69  end=75  match=TATAAAA
+
+[polyA_signal] regex=AATAAA   hits=1
+  - hit#1  start=77  end=82  match=AATAAA
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq011_repeat_like   kind=DNA   length=107
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq012_palindrome_like   kind=DNA   length=111
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq013_promoter_like   kind=DNA   length=129
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=20  end=26  match=TATAAAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq014_random_like   kind=DNA   length=136
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq015_gc_rich   kind=DNA   length=121
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq016_at_rich   kind=DNA   length=130
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq017_repeat_like   kind=DNA   length=120
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq018_palindrome_like   kind=DNA   length=116
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq019_promoter_like   kind=DNA   length=115
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=77  end=83  match=TATATAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq020_random_like   kind=DNA   length=91
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq021_gc_rich   kind=DNA   length=110
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq022_at_rich   kind=DNA   length=124
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq023_repeat_like   kind=DNA   length=134
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq024_palindrome_like   kind=DNA   length=90
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=58  end=63  match=GAATTC
+
+============================================================
+> dna_seq025_promoter_like   kind=DNA   length=129
 ------------------------------------------------------------
 [TATA_box] regex=TATA[AT]A[AT]   hits=0
   (no matches)
@@ -29,76 +302,2265 @@ Indexing  : 1-based positions, end inclusive
   (no matches)
 
 [EcoRI_site] regex=GAATTC   hits=2
-  - hit#1  start=30  end=35  match=GAATTC
-  - hit#2  start=84  end=89  match=GAATTC
+  - hit#1  start=23  end=28  match=GAATTC
+  - hit#2  start=40  end=45  match=GAATTC
 
 ============================================================
-> dna_seq3_short   kind=DNA   length=36
+> dna_seq026_random_like   kind=DNA   length=136
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=128  end=133  match=GAATTC
+
+============================================================
+> dna_seq027_gc_rich   kind=DNA   length=100
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq028_at_rich   kind=DNA   length=119
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=2
+  - hit#1  start=6  end=12  match=TATAAAA
+  - hit#2  start=77  end=83  match=TATATAT
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq029_repeat_like   kind=DNA   length=104
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq030_palindrome_like   kind=DNA   length=99
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=88  end=94  match=TATAAAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=74  end=79  match=GAATTC
+
+============================================================
+> dna_seq031_promoter_like   kind=DNA   length=125
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=65  end=70  match=GAATTC
+
+============================================================
+> dna_seq032_random_like   kind=DNA   length=115
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=101  end=106  match=GAATTC
+
+============================================================
+> dna_seq033_gc_rich   kind=DNA   length=113
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq034_at_rich   kind=DNA   length=116
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=2
+  - hit#1  start=26  end=32  match=TATATAT
+  - hit#2  start=106  end=112  match=TATATAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq035_repeat_like   kind=DNA   length=95
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq036_palindrome_like   kind=DNA   length=125
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq037_promoter_like   kind=DNA   length=139
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=22  end=27  match=GAATTC
+
+============================================================
+> dna_seq038_random_like   kind=DNA   length=109
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=67  end=72  match=GAATTC
+
+============================================================
+> dna_seq039_gc_rich   kind=DNA   length=107
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq040_at_rich   kind=DNA   length=135
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq041_repeat_like   kind=DNA   length=102
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq042_palindrome_like   kind=DNA   length=133
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=40  end=45  match=GAATTC
+
+============================================================
+> dna_seq043_promoter_like   kind=DNA   length=95
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=35  end=41  match=TATAAAT
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=61  end=66  match=GAATTC
+
+============================================================
+> dna_seq044_random_like   kind=DNA   length=101
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=9  end=14  match=GAATTC
+
+============================================================
+> dna_seq045_gc_rich   kind=DNA   length=101
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq046_at_rich   kind=DNA   length=131
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq047_repeat_like   kind=DNA   length=93
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq048_palindrome_like   kind=DNA   length=132
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=58  end=63  match=GAATTC
+
+============================================================
+> dna_seq049_promoter_like   kind=DNA   length=130
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=111  end=116  match=GAATTC
+
+============================================================
+> dna_seq050_random_like   kind=DNA   length=124
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq051_gc_rich   kind=DNA   length=115
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq052_at_rich   kind=DNA   length=118
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq053_repeat_like   kind=DNA   length=106
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq054_palindrome_like   kind=DNA   length=133
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq055_promoter_like   kind=DNA   length=129
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=52  end=58  match=TATATAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq056_random_like   kind=DNA   length=128
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq057_gc_rich   kind=DNA   length=116
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq058_at_rich   kind=DNA   length=103
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=73  end=79  match=TATAAAT
+
+[polyA_signal] regex=AATAAA   hits=1
+  - hit#1  start=77  end=82  match=AATAAA
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq059_repeat_like   kind=DNA   length=123
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=14
+  - hit#1  start=6  end=12  match=TATATAT
+  - hit#2  start=14  end=20  match=TATATAT
+  - hit#3  start=22  end=28  match=TATATAT
+  - hit#4  start=30  end=36  match=TATATAT
+  - hit#5  start=38  end=44  match=TATATAT
+  - hit#6  start=46  end=52  match=TATATAT
+  - hit#7  start=54  end=60  match=TATATAT
+  - hit#8  start=62  end=68  match=TATATAT
+  - hit#9  start=70  end=76  match=TATATAT
+  - hit#10  start=78  end=84  match=TATATAT
+  - hit#11  start=92  end=98  match=TATATAT
+  - hit#12  start=100  end=106  match=TATATAT
+  - hit#13  start=108  end=114  match=TATATAT
+  - hit#14  start=116  end=122  match=TATATAT
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq060_palindrome_like   kind=DNA   length=134
 ------------------------------------------------------------
 [TATA_box] regex=TATA[AT]A[AT]   hits=0
   (no matches)
 
 [polyA_signal] regex=AATAAA   hits=1
-  - hit#1  start=31  end=36  match=AATAAA
+  - hit#1  start=58  end=63  match=AATAAA
 
 [EcoRI_site] regex=GAATTC   hits=1
-  - hit#1  start=7  end=12  match=GAATTC
+  - hit#1  start=128  end=133  match=GAATTC
 
 ============================================================
-> prot_seq1_kinase_like   kind=PROTEIN   length=65
+> dna_seq061_promoter_like   kind=DNA   length=121
 ------------------------------------------------------------
-[N_glycosylation] regex=N[^P][ST][^P]   hits=5
-  - hit#1  start=33  end=36  match=NQST
-  - hit#2  start=37  end=40  match=NVTK
-  - hit#3  start=48  end=51  match=NQST
-  - hit#4  start=54  end=57  match=NQST
-  - hit#5  start=58  end=61  match=NVTS
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=73  end=79  match=TATAAAA
 
-[Proline_directed_phospho] regex=[ST]P   hits=3
-  - hit#1  start=21  end=22  match=TP
-  - hit#2  start=42  end=43  match=TP
-  - hit#3  start=61  end=62  match=SP
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
 
-[RGD_integrin_binding] regex=RGD   hits=3
-  - hit#1  start=11  end=13  match=RGD
-  - hit#2  start=28  end=30  match=RGD
-  - hit#3  start=63  end=65  match=RGD
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=26  end=31  match=GAATTC
 
 ============================================================
-> prot_seq2_glycoprotein_like   kind=PROTEIN   length=64
+> dna_seq062_random_like   kind=DNA   length=113
 ------------------------------------------------------------
-[N_glycosylation] regex=N[^P][ST][^P]   hits=13
-  - hit#1  start=4  end=7  match=NQST
-  - hit#2  start=8  end=11  match=NVTV
-  - hit#3  start=13  end=16  match=NQST
-  - hit#4  start=17  end=20  match=NVTV
-  - hit#5  start=21  end=24  match=NQST
-  - hit#6  start=25  end=28  match=NVTN
-  - hit#7  start=29  end=32  match=NSTA
-  - hit#8  start=35  end=38  match=NVTN
-  - hit#9  start=39  end=42  match=NSTV
-  - hit#10  start=46  end=49  match=NQST
-  - hit#11  start=50  end=53  match=NVTV
-  - hit#12  start=54  end=57  match=NQST
-  - hit#13  start=58  end=61  match=NVTV
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq063_gc_rich   kind=DNA   length=107
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq064_at_rich   kind=DNA   length=115
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=58  end=64  match=TATATAT
+
+[polyA_signal] regex=AATAAA   hits=1
+  - hit#1  start=71  end=76  match=AATAAA
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq065_repeat_like   kind=DNA   length=96
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=10
+  - hit#1  start=2  end=8  match=TATATAT
+  - hit#2  start=10  end=16  match=TATATAT
+  - hit#3  start=18  end=24  match=TATATAT
+  - hit#4  start=26  end=32  match=TATATAT
+  - hit#5  start=34  end=40  match=TATATAT
+  - hit#6  start=50  end=56  match=TATATAT
+  - hit#7  start=62  end=68  match=TATATAT
+  - hit#8  start=74  end=80  match=TATATAT
+  - hit#9  start=82  end=88  match=TATATAT
+  - hit#10  start=90  end=96  match=TATATAT
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq066_palindrome_like   kind=DNA   length=117
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq067_promoter_like   kind=DNA   length=107
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=59  end=65  match=TATAAAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=88  end=93  match=GAATTC
+
+============================================================
+> dna_seq068_random_like   kind=DNA   length=113
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=65  end=70  match=GAATTC
+
+============================================================
+> dna_seq069_gc_rich   kind=DNA   length=119
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq070_at_rich   kind=DNA   length=110
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq071_repeat_like   kind=DNA   length=115
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq072_palindrome_like   kind=DNA   length=102
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq073_promoter_like   kind=DNA   length=122
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=82  end=88  match=TATAAAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq074_random_like   kind=DNA   length=92
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=73  end=78  match=GAATTC
+
+============================================================
+> dna_seq075_gc_rich   kind=DNA   length=98
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq076_at_rich   kind=DNA   length=92
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=77  end=83  match=TATATAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq077_repeat_like   kind=DNA   length=110
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq078_palindrome_like   kind=DNA   length=122
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=91  end=96  match=GAATTC
+
+============================================================
+> dna_seq079_promoter_like   kind=DNA   length=133
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=99  end=105  match=TATAAAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=9  end=14  match=GAATTC
+
+============================================================
+> dna_seq080_random_like   kind=DNA   length=98
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq081_gc_rich   kind=DNA   length=139
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq082_at_rich   kind=DNA   length=99
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq083_repeat_like   kind=DNA   length=136
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq084_palindrome_like   kind=DNA   length=125
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq085_promoter_like   kind=DNA   length=129
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=22  end=28  match=TATAAAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=82  end=87  match=GAATTC
+
+============================================================
+> dna_seq086_random_like   kind=DNA   length=99
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=6  end=11  match=GAATTC
+
+============================================================
+> dna_seq087_gc_rich   kind=DNA   length=96
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq088_at_rich   kind=DNA   length=93
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=1
+  - hit#1  start=67  end=72  match=AATAAA
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq089_repeat_like   kind=DNA   length=134
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq090_palindrome_like   kind=DNA   length=122
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=23  end=28  match=GAATTC
+
+============================================================
+> dna_seq091_promoter_like   kind=DNA   length=95
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=82  end=88  match=TATAAAT
+
+[polyA_signal] regex=AATAAA   hits=1
+  - hit#1  start=2  end=7  match=AATAAA
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq092_random_like   kind=DNA   length=116
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq093_gc_rich   kind=DNA   length=90
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq094_at_rich   kind=DNA   length=97
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=49  end=55  match=TATAAAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq095_repeat_like   kind=DNA   length=135
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq096_palindrome_like   kind=DNA   length=133
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=88  end=93  match=GAATTC
+
+============================================================
+> dna_seq097_promoter_like   kind=DNA   length=129
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=1
+  - hit#1  start=51  end=57  match=TATAAAA
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=24  end=29  match=GAATTC
+
+============================================================
+> dna_seq098_random_like   kind=DNA   length=105
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=37  end=42  match=GAATTC
+
+============================================================
+> dna_seq099_gc_rich   kind=DNA   length=100
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=1
+  - hit#1  start=4  end=9  match=AATAAA
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> dna_seq100_at_rich   kind=DNA   length=134
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=1
+  - hit#1  start=5  end=10  match=AATAAA
+
+[EcoRI_site] regex=GAATTC   hits=0
+  (no matches)
+
+============================================================
+> prot_seq001_kinase_like   kind=PROTEIN   length=164
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=2  end=3  match=SP
+  - hit#2  start=34  end=35  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=39  end=41  match=RGD
+
+============================================================
+> prot_seq002_glycoprotein_like   kind=PROTEIN   length=147
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=3
+  - hit#1  start=61  end=64  match=NASS
+  - hit#2  start=80  end=83  match=NNSG
+  - hit#3  start=132  end=135  match=NHSR
 
 [Proline_directed_phospho] regex=[ST]P   hits=0
   (no matches)
 
 [RGD_integrin_binding] regex=RGD   hits=1
-  - hit#1  start=62  end=64  match=RGD
+  - hit#1  start=135  end=137  match=RGD
 
 ============================================================
-> prot_seq3_short   kind=PROTEIN   length=21
+> prot_seq003_enzyme_like   kind=PROTEIN   length=158
 ------------------------------------------------------------
-[N_glycosylation] regex=N[^P][ST][^P]   hits=2
-  - hit#1  start=5  end=8  match=NVTN
-  - hit#2  start=9  end=12  match=NSTA
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
 
-[Proline_directed_phospho] regex=[ST]P   hits=1
-  - hit#1  start=16  end=17  match=TP
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=89  end=90  match=SP
+  - hit#2  start=138  end=139  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq004_transmembrane_like   kind=PROTEIN   length=171
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq005_coiled_coil_like   kind=PROTEIN   length=141
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq006_short   kind=PROTEIN   length=83
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
 
 [RGD_integrin_binding] regex=RGD   hits=1
-  - hit#1  start=19  end=21  match=RGD
+  - hit#1  start=28  end=30  match=RGD
+
+============================================================
+> prot_seq007_kinase_like   kind=PROTEIN   length=123
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=2
+  - hit#1  start=31  end=34  match=NYTW
+  - hit#2  start=99  end=102  match=NTSV
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=44  end=45  match=SP
+  - hit#2  start=117  end=118  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=47  end=49  match=RGD
+
+============================================================
+> prot_seq008_glycoprotein_like   kind=PROTEIN   length=175
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=7
+  - hit#1  start=39  end=42  match=NNST
+  - hit#2  start=43  end=46  match=NTSM
+  - hit#3  start=60  end=63  match=NHSM
+  - hit#4  start=71  end=74  match=NKTT
+  - hit#5  start=89  end=92  match=NNTT
+  - hit#6  start=135  end=138  match=NITT
+  - hit#7  start=161  end=164  match=NNTS
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=100  end=101  match=SP
+  - hit#2  start=128  end=129  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=11  end=13  match=RGD
+
+============================================================
+> prot_seq009_enzyme_like   kind=PROTEIN   length=130
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq010_transmembrane_like   kind=PROTEIN   length=123
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq011_coiled_coil_like   kind=PROTEIN   length=147
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq012_short   kind=PROTEIN   length=64
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=5  end=8  match=NVTR
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=31  end=33  match=RGD
+
+============================================================
+> prot_seq013_kinase_like   kind=PROTEIN   length=121
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=10  end=11  match=SP
+  - hit#2  start=74  end=75  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=31  end=33  match=RGD
+
+============================================================
+> prot_seq014_glycoprotein_like   kind=PROTEIN   length=170
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=8
+  - hit#1  start=7  end=10  match=NFTN
+  - hit#2  start=15  end=18  match=NRSQ
+  - hit#3  start=19  end=22  match=NSTS
+  - hit#4  start=31  end=34  match=NATG
+  - hit#5  start=42  end=45  match=NTSN
+  - hit#6  start=56  end=59  match=NASS
+  - hit#7  start=110  end=113  match=NETK
+  - hit#8  start=132  end=135  match=NHST
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=84  end=86  match=RGD
+
+============================================================
+> prot_seq015_enzyme_like   kind=PROTEIN   length=151
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=15  end=18  match=NGTK
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq016_transmembrane_like   kind=PROTEIN   length=156
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq017_coiled_coil_like   kind=PROTEIN   length=125
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq018_short   kind=PROTEIN   length=58
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq019_kinase_like   kind=PROTEIN   length=156
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=88  end=91  match=NSSE
+
+[Proline_directed_phospho] regex=[ST]P   hits=3
+  - hit#1  start=12  end=13  match=TP
+  - hit#2  start=111  end=112  match=SP
+  - hit#3  start=128  end=129  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=48  end=50  match=RGD
+
+============================================================
+> prot_seq020_glycoprotein_like   kind=PROTEIN   length=96
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=5
+  - hit#1  start=34  end=37  match=NKTD
+  - hit#2  start=45  end=48  match=NFTF
+  - hit#3  start=49  end=52  match=NKSV
+  - hit#4  start=56  end=59  match=NHST
+  - hit#5  start=82  end=85  match=NQTN
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq021_enzyme_like   kind=PROTEIN   length=146
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq022_transmembrane_like   kind=PROTEIN   length=130
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=96  end=99  match=NMSE
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq023_coiled_coil_like   kind=PROTEIN   length=127
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq024_short   kind=PROTEIN   length=62
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=7  end=9  match=RGD
+
+============================================================
+> prot_seq025_kinase_like   kind=PROTEIN   length=162
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=122  end=125  match=NYTR
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=152  end=153  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=85  end=87  match=RGD
+
+============================================================
+> prot_seq026_glycoprotein_like   kind=PROTEIN   length=139
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=6
+  - hit#1  start=24  end=27  match=NLSK
+  - hit#2  start=44  end=47  match=NISY
+  - hit#3  start=56  end=59  match=NESA
+  - hit#4  start=86  end=89  match=NATS
+  - hit#5  start=97  end=100  match=NNSR
+  - hit#6  start=118  end=121  match=NKTS
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=37  end=38  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq027_enzyme_like   kind=PROTEIN   length=130
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=86  end=87  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq028_transmembrane_like   kind=PROTEIN   length=177
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq029_coiled_coil_like   kind=PROTEIN   length=124
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq030_short   kind=PROTEIN   length=55
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=26  end=27  match=TP
+  - hit#2  start=29  end=30  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=6  end=8  match=RGD
+
+============================================================
+> prot_seq031_kinase_like   kind=PROTEIN   length=135
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=24  end=27  match=NLTK
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=2  end=3  match=TP
+  - hit#2  start=48  end=49  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq032_glycoprotein_like   kind=PROTEIN   length=134
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=5
+  - hit#1  start=10  end=13  match=NKSA
+  - hit#2  start=73  end=76  match=NMSM
+  - hit#3  start=92  end=95  match=NHST
+  - hit#4  start=103  end=106  match=NTSR
+  - hit#5  start=129  end=132  match=NWSC
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=16  end=17  match=TP
+  - hit#2  start=90  end=91  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=60  end=62  match=RGD
+
+============================================================
+> prot_seq033_enzyme_like   kind=PROTEIN   length=87
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq034_transmembrane_like   kind=PROTEIN   length=124
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=26  end=29  match=NRSN
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq035_coiled_coil_like   kind=PROTEIN   length=162
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq036_short   kind=PROTEIN   length=67
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=48  end=50  match=RGD
+
+============================================================
+> prot_seq037_kinase_like   kind=PROTEIN   length=176
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=3
+  - hit#1  start=31  end=34  match=NLSH
+  - hit#2  start=45  end=48  match=NKTS
+  - hit#3  start=119  end=122  match=NSTQ
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=49  end=50  match=SP
+  - hit#2  start=139  end=140  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=136  end=138  match=RGD
+
+============================================================
+> prot_seq038_glycoprotein_like   kind=PROTEIN   length=173
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=7
+  - hit#1  start=7  end=10  match=NTSN
+  - hit#2  start=51  end=54  match=NVTT
+  - hit#3  start=87  end=90  match=NESG
+  - hit#4  start=107  end=110  match=NSSG
+  - hit#5  start=124  end=127  match=NTTT
+  - hit#6  start=141  end=144  match=NDSG
+  - hit#7  start=162  end=165  match=NCSN
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=78  end=79  match=SP
+  - hit#2  start=127  end=128  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq039_enzyme_like   kind=PROTEIN   length=179
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=176  end=179  match=NLTE
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq040_transmembrane_like   kind=PROTEIN   length=110
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=35  end=36  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq041_coiled_coil_like   kind=PROTEIN   length=121
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq042_short   kind=PROTEIN   length=78
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq043_kinase_like   kind=PROTEIN   length=165
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=3
+  - hit#1  start=60  end=63  match=NTST
+  - hit#2  start=77  end=80  match=NCSD
+  - hit#3  start=132  end=135  match=NETM
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=107  end=108  match=SP
+  - hit#2  start=113  end=114  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=25  end=27  match=RGD
+
+============================================================
+> prot_seq044_glycoprotein_like   kind=PROTEIN   length=93
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=6
+  - hit#1  start=3  end=6  match=NFTM
+  - hit#2  start=17  end=20  match=NYTT
+  - hit#3  start=50  end=53  match=NITI
+  - hit#4  start=61  end=64  match=NHTV
+  - hit#5  start=80  end=83  match=NSTV
+  - hit#6  start=87  end=90  match=NQTF
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=85  end=86  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=58  end=60  match=RGD
+
+============================================================
+> prot_seq045_enzyme_like   kind=PROTEIN   length=177
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq046_transmembrane_like   kind=PROTEIN   length=129
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=2
+  - hit#1  start=11  end=14  match=NLSC
+  - hit#2  start=70  end=73  match=NITL
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq047_coiled_coil_like   kind=PROTEIN   length=107
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq048_short   kind=PROTEIN   length=79
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=75  end=77  match=RGD
+
+============================================================
+> prot_seq049_kinase_like   kind=PROTEIN   length=187
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=2
+  - hit#1  start=98  end=101  match=NSTS
+  - hit#2  start=162  end=165  match=NGTS
+
+[Proline_directed_phospho] regex=[ST]P   hits=5
+  - hit#1  start=56  end=57  match=TP
+  - hit#2  start=62  end=63  match=SP
+  - hit#3  start=101  end=102  match=SP
+  - hit#4  start=124  end=125  match=TP
+  - hit#5  start=165  end=166  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=77  end=79  match=RGD
+
+============================================================
+> prot_seq050_glycoprotein_like   kind=PROTEIN   length=164
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=6
+  - hit#1  start=72  end=75  match=NCTF
+  - hit#2  start=80  end=83  match=NYSC
+  - hit#3  start=108  end=111  match=NASC
+  - hit#4  start=125  end=128  match=NQSK
+  - hit#5  start=152  end=155  match=NKSN
+  - hit#6  start=161  end=164  match=NGTV
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=91  end=92  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=23  end=25  match=RGD
+
+============================================================
+> prot_seq051_enzyme_like   kind=PROTEIN   length=118
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq052_transmembrane_like   kind=PROTEIN   length=218
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq053_coiled_coil_like   kind=PROTEIN   length=166
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq054_short   kind=PROTEIN   length=58
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq055_kinase_like   kind=PROTEIN   length=179
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=3
+  - hit#1  start=27  end=30  match=NSTN
+  - hit#2  start=58  end=61  match=NRSG
+  - hit#3  start=103  end=106  match=NISR
+
+[Proline_directed_phospho] regex=[ST]P   hits=6
+  - hit#1  start=11  end=12  match=SP
+  - hit#2  start=62  end=63  match=TP
+  - hit#3  start=76  end=77  match=TP
+  - hit#4  start=85  end=86  match=TP
+  - hit#5  start=96  end=97  match=TP
+  - hit#6  start=166  end=167  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=136  end=138  match=RGD
+
+============================================================
+> prot_seq056_glycoprotein_like   kind=PROTEIN   length=132
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=4
+  - hit#1  start=22  end=25  match=NLSN
+  - hit#2  start=28  end=31  match=NESW
+  - hit#3  start=39  end=42  match=NFSN
+  - hit#4  start=103  end=106  match=NDSM
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=6  end=7  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq057_enzyme_like   kind=PROTEIN   length=110
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=39  end=40  match=TP
+  - hit#2  start=95  end=96  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq058_transmembrane_like   kind=PROTEIN   length=120
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=20  end=23  match=NRTM
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq059_coiled_coil_like   kind=PROTEIN   length=142
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq060_short   kind=PROTEIN   length=81
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=64  end=67  match=NETY
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=6  end=8  match=RGD
+
+============================================================
+> prot_seq061_kinase_like   kind=PROTEIN   length=137
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=24  end=27  match=NSSS
+
+[Proline_directed_phospho] regex=[ST]P   hits=4
+  - hit#1  start=27  end=28  match=SP
+  - hit#2  start=36  end=37  match=SP
+  - hit#3  start=40  end=41  match=SP
+  - hit#4  start=128  end=129  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=122  end=124  match=RGD
+
+============================================================
+> prot_seq062_glycoprotein_like   kind=PROTEIN   length=110
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=7
+  - hit#1  start=1  end=4  match=NASS
+  - hit#2  start=24  end=27  match=NLTK
+  - hit#3  start=38  end=41  match=NQTV
+  - hit#4  start=45  end=48  match=NVTD
+  - hit#5  start=64  end=67  match=NATW
+  - hit#6  start=78  end=81  match=NNSN
+  - hit#7  start=95  end=98  match=NESG
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=8  end=10  match=RGD
+
+============================================================
+> prot_seq063_enzyme_like   kind=PROTEIN   length=186
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=5  end=8  match=NLSQ
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=56  end=57  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq064_transmembrane_like   kind=PROTEIN   length=121
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq065_coiled_coil_like   kind=PROTEIN   length=131
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq066_short   kind=PROTEIN   length=71
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=17  end=19  match=RGD
+
+============================================================
+> prot_seq067_kinase_like   kind=PROTEIN   length=149
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=28  end=29  match=SP
+  - hit#2  start=64  end=65  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=35  end=37  match=RGD
+
+============================================================
+> prot_seq068_glycoprotein_like   kind=PROTEIN   length=174
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=9
+  - hit#1  start=9  end=12  match=NSTY
+  - hit#2  start=15  end=18  match=NGTA
+  - hit#3  start=27  end=30  match=NTTR
+  - hit#4  start=39  end=42  match=NSSN
+  - hit#5  start=56  end=59  match=NYTI
+  - hit#6  start=94  end=97  match=NHSY
+  - hit#7  start=108  end=111  match=NASR
+  - hit#8  start=154  end=157  match=NYSV
+  - hit#9  start=158  end=161  match=NCSM
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=30  end=32  match=RGD
+
+============================================================
+> prot_seq069_enzyme_like   kind=PROTEIN   length=101
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=78  end=81  match=NATC
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq070_transmembrane_like   kind=PROTEIN   length=186
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq071_coiled_coil_like   kind=PROTEIN   length=92
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq072_short   kind=PROTEIN   length=56
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=45  end=46  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=3  end=5  match=RGD
+
+============================================================
+> prot_seq073_kinase_like   kind=PROTEIN   length=181
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=4
+  - hit#1  start=27  end=28  match=SP
+  - hit#2  start=32  end=33  match=SP
+  - hit#3  start=89  end=90  match=SP
+  - hit#4  start=114  end=115  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=108  end=110  match=RGD
+
+============================================================
+> prot_seq074_glycoprotein_like   kind=PROTEIN   length=115
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=4
+  - hit#1  start=3  end=6  match=NGTA
+  - hit#2  start=31  end=34  match=NYSS
+  - hit#3  start=85  end=88  match=NASS
+  - hit#4  start=107  end=110  match=NFSK
+
+[Proline_directed_phospho] regex=[ST]P   hits=3
+  - hit#1  start=34  end=35  match=SP
+  - hit#2  start=73  end=74  match=SP
+  - hit#3  start=88  end=89  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq075_enzyme_like   kind=PROTEIN   length=175
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=24  end=27  match=NASC
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq076_transmembrane_like   kind=PROTEIN   length=137
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=11  end=12  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq077_coiled_coil_like   kind=PROTEIN   length=117
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq078_short   kind=PROTEIN   length=71
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=3  end=6  match=NWTR
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=6  end=8  match=RGD
+
+============================================================
+> prot_seq079_kinase_like   kind=PROTEIN   length=138
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=5
+  - hit#1  start=23  end=24  match=TP
+  - hit#2  start=77  end=78  match=SP
+  - hit#3  start=90  end=91  match=SP
+  - hit#4  start=99  end=100  match=TP
+  - hit#5  start=128  end=129  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=124  end=126  match=RGD
+
+============================================================
+> prot_seq080_glycoprotein_like   kind=PROTEIN   length=91
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=3
+  - hit#1  start=9  end=12  match=NNTA
+  - hit#2  start=81  end=84  match=NHSI
+  - hit#3  start=86  end=89  match=NQTE
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=46  end=48  match=RGD
+
+============================================================
+> prot_seq081_enzyme_like   kind=PROTEIN   length=126
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=122  end=125  match=NHSA
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq082_transmembrane_like   kind=PROTEIN   length=108
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=27  end=28  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq083_coiled_coil_like   kind=PROTEIN   length=115
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq084_short   kind=PROTEIN   length=81
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=1  end=3  match=RGD
+
+============================================================
+> prot_seq085_kinase_like   kind=PROTEIN   length=86
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=4  end=7  match=NWTE
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=66  end=68  match=RGD
+
+============================================================
+> prot_seq086_glycoprotein_like   kind=PROTEIN   length=137
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=6
+  - hit#1  start=66  end=69  match=NNST
+  - hit#2  start=102  end=105  match=NVSI
+  - hit#3  start=108  end=111  match=NWTS
+  - hit#4  start=114  end=117  match=NCSV
+  - hit#5  start=119  end=122  match=NTSY
+  - hit#6  start=124  end=127  match=NCSW
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=82  end=83  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=71  end=73  match=RGD
+
+============================================================
+> prot_seq087_enzyme_like   kind=PROTEIN   length=179
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=31  end=34  match=NWSM
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq088_transmembrane_like   kind=PROTEIN   length=172
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=127  end=128  match=SP
+  - hit#2  start=152  end=153  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq089_coiled_coil_like   kind=PROTEIN   length=141
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq090_short   kind=PROTEIN   length=69
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=34  end=37  match=NDTM
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq091_kinase_like   kind=PROTEIN   length=85
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=37  end=38  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq092_glycoprotein_like   kind=PROTEIN   length=134
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=8
+  - hit#1  start=8  end=11  match=NVSS
+  - hit#2  start=12  end=15  match=NHSN
+  - hit#3  start=16  end=19  match=NTTR
+  - hit#4  start=31  end=34  match=NFTW
+  - hit#5  start=41  end=44  match=NASN
+  - hit#6  start=79  end=82  match=NNSD
+  - hit#7  start=98  end=101  match=NISR
+  - hit#8  start=108  end=111  match=NQST
+
+[Proline_directed_phospho] regex=[ST]P   hits=2
+  - hit#1  start=2  end=3  match=SP
+  - hit#2  start=130  end=131  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq093_enzyme_like   kind=PROTEIN   length=116
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=1
+  - hit#1  start=43  end=46  match=NCTA
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq094_transmembrane_like   kind=PROTEIN   length=172
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=2
+  - hit#1  start=42  end=45  match=NDTI
+  - hit#2  start=165  end=168  match=NDST
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=168  end=169  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq095_coiled_coil_like   kind=PROTEIN   length=139
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq096_short   kind=PROTEIN   length=69
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=10  end=12  match=RGD
+
+============================================================
+> prot_seq097_kinase_like   kind=PROTEIN   length=118
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=2
+  - hit#1  start=5  end=8  match=NKTR
+  - hit#2  start=105  end=108  match=NSSV
+
+[Proline_directed_phospho] regex=[ST]P   hits=3
+  - hit#1  start=45  end=46  match=SP
+  - hit#2  start=70  end=71  match=TP
+  - hit#3  start=103  end=104  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=89  end=91  match=RGD
+
+============================================================
+> prot_seq098_glycoprotein_like   kind=PROTEIN   length=180
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=6
+  - hit#1  start=5  end=8  match=NSTY
+  - hit#2  start=36  end=39  match=NHSC
+  - hit#3  start=45  end=48  match=NITT
+  - hit#4  start=81  end=84  match=NHSI
+  - hit#5  start=108  end=111  match=NMSQ
+  - hit#6  start=114  end=117  match=NASD
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=21  end=23  match=RGD
+
+============================================================
+> prot_seq099_enzyme_like   kind=PROTEIN   length=144
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
+
+============================================================
+> prot_seq100_transmembrane_like   kind=PROTEIN   length=171
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=0
+  (no matches)
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=0
+  (no matches)
 
 ======================== END OF MATCHES ========================

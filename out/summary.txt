@@ -6,46 +6,628 @@ Indexing  : 1-based positions, end inclusive
 ============================================================
 TOTALS BY KIND
 ------------------------------------------------------------
-DNA sequences      : 3
-Protein sequences  : 3
-Total sequences    : 6
+DNA sequences      : 100
+Protein sequences  : 100
+Total sequences    : 200
 
-Total matches (DNA)     : 9
-Total matches (Protein) : 29
-Total matches (All)     : 38
+Total matches (DNA)     : 84
+Total matches (Protein) : 254
+Total matches (All)     : 338
 
 ============================================================
 TOTALS BY MOTIF (ALL SEQUENCES)
 ------------------------------------------------------------
 DNA motifs
-  - TATA_box               : 0
-  - polyA_signal           : 2
-  - EcoRI_site             : 7
+  - TATA_box               : 47
+  - polyA_signal           : 9
+  - EcoRI_site             : 28
 
 Protein motifs
-  - N_glycosylation        : 20
-  - Proline_directed_phospho : 4
-  - RGD_integrin_binding   : 5
+  - N_glycosylation        : 139
+  - Proline_directed_phospho : 77
+  - RGD_integrin_binding   : 38
 
 ============================================================
 COUNTS PER SEQUENCE
 ------------------------------------------------------------
-dna_seq1_promoter_like
-  TATA_box=0, polyA_signal=1, EcoRI_site=4   | DNA_total=5
+dna_seq001_promoter_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=1   | DNA_total=2
 
-dna_seq2_random_like
+dna_seq002_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq003_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq004_at_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq005_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq006_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq007_promoter_like
+  TATA_box=1, polyA_signal=1, EcoRI_site=0   | DNA_total=2
+
+dna_seq008_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq009_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq010_at_rich
+  TATA_box=1, polyA_signal=1, EcoRI_site=0   | DNA_total=2
+
+dna_seq011_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq012_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq013_promoter_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=0   | DNA_total=1
+
+dna_seq014_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq015_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq016_at_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq017_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq018_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq019_promoter_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=0   | DNA_total=1
+
+dna_seq020_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq021_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq022_at_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq023_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq024_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq025_promoter_like
   TATA_box=0, polyA_signal=0, EcoRI_site=2   | DNA_total=2
 
-dna_seq3_short
+dna_seq026_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq027_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq028_at_rich
+  TATA_box=2, polyA_signal=0, EcoRI_site=0   | DNA_total=2
+
+dna_seq029_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq030_palindrome_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=1   | DNA_total=2
+
+dna_seq031_promoter_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq032_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq033_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq034_at_rich
+  TATA_box=2, polyA_signal=0, EcoRI_site=0   | DNA_total=2
+
+dna_seq035_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq036_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq037_promoter_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq038_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq039_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq040_at_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq041_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq042_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq043_promoter_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=1   | DNA_total=2
+
+dna_seq044_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq045_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq046_at_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq047_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq048_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq049_promoter_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq050_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq051_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq052_at_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq053_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq054_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq055_promoter_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=0   | DNA_total=1
+
+dna_seq056_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq057_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq058_at_rich
+  TATA_box=1, polyA_signal=1, EcoRI_site=0   | DNA_total=2
+
+dna_seq059_repeat_like
+  TATA_box=14, polyA_signal=0, EcoRI_site=0   | DNA_total=14
+
+dna_seq060_palindrome_like
   TATA_box=0, polyA_signal=1, EcoRI_site=1   | DNA_total=2
 
-prot_seq1_kinase_like
-  N_glycosylation=5, Proline_directed_phospho=3, RGD_integrin_binding=3   | PROTEIN_total=11
+dna_seq061_promoter_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=1   | DNA_total=2
 
-prot_seq2_glycoprotein_like
-  N_glycosylation=13, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=14
+dna_seq062_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
 
-prot_seq3_short
-  N_glycosylation=2, Proline_directed_phospho=1, RGD_integrin_binding=1   | PROTEIN_total=4
+dna_seq063_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq064_at_rich
+  TATA_box=1, polyA_signal=1, EcoRI_site=0   | DNA_total=2
+
+dna_seq065_repeat_like
+  TATA_box=10, polyA_signal=0, EcoRI_site=0   | DNA_total=10
+
+dna_seq066_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq067_promoter_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=1   | DNA_total=2
+
+dna_seq068_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq069_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq070_at_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq071_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq072_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq073_promoter_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=0   | DNA_total=1
+
+dna_seq074_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq075_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq076_at_rich
+  TATA_box=1, polyA_signal=0, EcoRI_site=0   | DNA_total=1
+
+dna_seq077_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq078_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq079_promoter_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=1   | DNA_total=2
+
+dna_seq080_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq081_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq082_at_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq083_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq084_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq085_promoter_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=1   | DNA_total=2
+
+dna_seq086_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq087_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq088_at_rich
+  TATA_box=0, polyA_signal=1, EcoRI_site=0   | DNA_total=1
+
+dna_seq089_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq090_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq091_promoter_like
+  TATA_box=1, polyA_signal=1, EcoRI_site=0   | DNA_total=2
+
+dna_seq092_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq093_gc_rich
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq094_at_rich
+  TATA_box=1, polyA_signal=0, EcoRI_site=0   | DNA_total=1
+
+dna_seq095_repeat_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=0   | DNA_total=0
+
+dna_seq096_palindrome_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq097_promoter_like
+  TATA_box=1, polyA_signal=0, EcoRI_site=1   | DNA_total=2
+
+dna_seq098_random_like
+  TATA_box=0, polyA_signal=0, EcoRI_site=1   | DNA_total=1
+
+dna_seq099_gc_rich
+  TATA_box=0, polyA_signal=1, EcoRI_site=0   | DNA_total=1
+
+dna_seq100_at_rich
+  TATA_box=0, polyA_signal=1, EcoRI_site=0   | DNA_total=1
+
+prot_seq001_kinase_like
+  N_glycosylation=0, Proline_directed_phospho=2, RGD_integrin_binding=1   | PROTEIN_total=3
+
+prot_seq002_glycoprotein_like
+  N_glycosylation=3, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=4
+
+prot_seq003_enzyme_like
+  N_glycosylation=0, Proline_directed_phospho=2, RGD_integrin_binding=0   | PROTEIN_total=2
+
+prot_seq004_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq005_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq006_short
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=1
+
+prot_seq007_kinase_like
+  N_glycosylation=2, Proline_directed_phospho=2, RGD_integrin_binding=1   | PROTEIN_total=5
+
+prot_seq008_glycoprotein_like
+  N_glycosylation=7, Proline_directed_phospho=2, RGD_integrin_binding=1   | PROTEIN_total=10
+
+prot_seq009_enzyme_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq010_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq011_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq012_short
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=2
+
+prot_seq013_kinase_like
+  N_glycosylation=0, Proline_directed_phospho=2, RGD_integrin_binding=1   | PROTEIN_total=3
+
+prot_seq014_glycoprotein_like
+  N_glycosylation=8, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=9
+
+prot_seq015_enzyme_like
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq016_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq017_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq018_short
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq019_kinase_like
+  N_glycosylation=1, Proline_directed_phospho=3, RGD_integrin_binding=1   | PROTEIN_total=5
+
+prot_seq020_glycoprotein_like
+  N_glycosylation=5, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=5
+
+prot_seq021_enzyme_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq022_transmembrane_like
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq023_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq024_short
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=1
+
+prot_seq025_kinase_like
+  N_glycosylation=1, Proline_directed_phospho=1, RGD_integrin_binding=1   | PROTEIN_total=3
+
+prot_seq026_glycoprotein_like
+  N_glycosylation=6, Proline_directed_phospho=1, RGD_integrin_binding=0   | PROTEIN_total=7
+
+prot_seq027_enzyme_like
+  N_glycosylation=0, Proline_directed_phospho=1, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq028_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq029_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq030_short
+  N_glycosylation=0, Proline_directed_phospho=2, RGD_integrin_binding=1   | PROTEIN_total=3
+
+prot_seq031_kinase_like
+  N_glycosylation=1, Proline_directed_phospho=2, RGD_integrin_binding=0   | PROTEIN_total=3
+
+prot_seq032_glycoprotein_like
+  N_glycosylation=5, Proline_directed_phospho=2, RGD_integrin_binding=1   | PROTEIN_total=8
+
+prot_seq033_enzyme_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq034_transmembrane_like
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq035_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq036_short
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=1
+
+prot_seq037_kinase_like
+  N_glycosylation=3, Proline_directed_phospho=2, RGD_integrin_binding=1   | PROTEIN_total=6
+
+prot_seq038_glycoprotein_like
+  N_glycosylation=7, Proline_directed_phospho=2, RGD_integrin_binding=0   | PROTEIN_total=9
+
+prot_seq039_enzyme_like
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq040_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=1, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq041_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq042_short
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq043_kinase_like
+  N_glycosylation=3, Proline_directed_phospho=2, RGD_integrin_binding=1   | PROTEIN_total=6
+
+prot_seq044_glycoprotein_like
+  N_glycosylation=6, Proline_directed_phospho=1, RGD_integrin_binding=1   | PROTEIN_total=8
+
+prot_seq045_enzyme_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq046_transmembrane_like
+  N_glycosylation=2, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=2
+
+prot_seq047_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq048_short
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=1
+
+prot_seq049_kinase_like
+  N_glycosylation=2, Proline_directed_phospho=5, RGD_integrin_binding=1   | PROTEIN_total=8
+
+prot_seq050_glycoprotein_like
+  N_glycosylation=6, Proline_directed_phospho=1, RGD_integrin_binding=1   | PROTEIN_total=8
+
+prot_seq051_enzyme_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq052_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq053_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq054_short
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq055_kinase_like
+  N_glycosylation=3, Proline_directed_phospho=6, RGD_integrin_binding=1   | PROTEIN_total=10
+
+prot_seq056_glycoprotein_like
+  N_glycosylation=4, Proline_directed_phospho=1, RGD_integrin_binding=0   | PROTEIN_total=5
+
+prot_seq057_enzyme_like
+  N_glycosylation=0, Proline_directed_phospho=2, RGD_integrin_binding=0   | PROTEIN_total=2
+
+prot_seq058_transmembrane_like
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq059_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq060_short
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=2
+
+prot_seq061_kinase_like
+  N_glycosylation=1, Proline_directed_phospho=4, RGD_integrin_binding=1   | PROTEIN_total=6
+
+prot_seq062_glycoprotein_like
+  N_glycosylation=7, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=8
+
+prot_seq063_enzyme_like
+  N_glycosylation=1, Proline_directed_phospho=1, RGD_integrin_binding=0   | PROTEIN_total=2
+
+prot_seq064_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq065_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq066_short
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=1
+
+prot_seq067_kinase_like
+  N_glycosylation=0, Proline_directed_phospho=2, RGD_integrin_binding=1   | PROTEIN_total=3
+
+prot_seq068_glycoprotein_like
+  N_glycosylation=9, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=10
+
+prot_seq069_enzyme_like
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq070_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq071_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq072_short
+  N_glycosylation=0, Proline_directed_phospho=1, RGD_integrin_binding=1   | PROTEIN_total=2
+
+prot_seq073_kinase_like
+  N_glycosylation=0, Proline_directed_phospho=4, RGD_integrin_binding=1   | PROTEIN_total=5
+
+prot_seq074_glycoprotein_like
+  N_glycosylation=4, Proline_directed_phospho=3, RGD_integrin_binding=0   | PROTEIN_total=7
+
+prot_seq075_enzyme_like
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq076_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=1, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq077_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq078_short
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=2
+
+prot_seq079_kinase_like
+  N_glycosylation=0, Proline_directed_phospho=5, RGD_integrin_binding=1   | PROTEIN_total=6
+
+prot_seq080_glycoprotein_like
+  N_glycosylation=3, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=4
+
+prot_seq081_enzyme_like
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq082_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=1, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq083_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq084_short
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=1
+
+prot_seq085_kinase_like
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=2
+
+prot_seq086_glycoprotein_like
+  N_glycosylation=6, Proline_directed_phospho=1, RGD_integrin_binding=1   | PROTEIN_total=8
+
+prot_seq087_enzyme_like
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq088_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=2, RGD_integrin_binding=0   | PROTEIN_total=2
+
+prot_seq089_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq090_short
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq091_kinase_like
+  N_glycosylation=0, Proline_directed_phospho=1, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq092_glycoprotein_like
+  N_glycosylation=8, Proline_directed_phospho=2, RGD_integrin_binding=0   | PROTEIN_total=10
+
+prot_seq093_enzyme_like
+  N_glycosylation=1, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=1
+
+prot_seq094_transmembrane_like
+  N_glycosylation=2, Proline_directed_phospho=1, RGD_integrin_binding=0   | PROTEIN_total=3
+
+prot_seq095_coiled_coil_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq096_short
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=1
+
+prot_seq097_kinase_like
+  N_glycosylation=2, Proline_directed_phospho=3, RGD_integrin_binding=1   | PROTEIN_total=6
+
+prot_seq098_glycoprotein_like
+  N_glycosylation=6, Proline_directed_phospho=0, RGD_integrin_binding=1   | PROTEIN_total=7
+
+prot_seq099_enzyme_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
+
+prot_seq100_transmembrane_like
+  N_glycosylation=0, Proline_directed_phospho=0, RGD_integrin_binding=0   | PROTEIN_total=0
 
 ======================== END OF SUMMARY ========================

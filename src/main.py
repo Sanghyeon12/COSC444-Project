@@ -1,12 +1,3 @@
-"""
-src/main.py
-
-Creates 3 output files:
-  - matches.txt  (full detail)
-  - summary.txt  (counts/totals)
-  - baseline.txt (real vs randomized control)
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -14,13 +5,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Mapping, Sequence, Tuple, Any
 import re
-import sys
-
-# Add project root to path for direct execution
-if __name__ == "__main__":
-    project_root = Path(__file__).resolve().parent.parent
-    if str(project_root) not in sys.path:
-        sys.path.insert(0, str(project_root))
 
 from src.motifs import load_motifs
 from src.io.alphabet import detect_kind
@@ -258,9 +242,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             raise SystemExit(f"Unknown motif: {args.motif!r}")
 
     fasta_records = read_fasta(fasta_path)
-    # Convert FastaRecord objects to (seq_id, sequence) tuples
-    fasta_tuples = [(rec.id, rec.sequence) for rec in fasta_records]
-    records = build_records(fasta_tuples)
+    records = build_records(fasta_records)
     matches = run_scan(records, dna_motifs, protein_motifs)
 
     write_matches_txt(outdir / "matches.txt", fasta_path=fasta_path, mode=args.mode.upper(),

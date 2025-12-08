@@ -1,0 +1,104 @@
+DNA/Protein Motif Scanner - Match Report
+Input FASTA: data/demo_mixed.fasta
+Motif set : motifs/dna.json + motifs/protein.json
+Mode      : MULTI
+Indexing  : 1-based positions, end inclusive
+
+============================================================
+> dna_seq1_promoter_like   kind=DNA   length=134
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=1
+  - hit#1  start=31  end=36  match=AATAAA
+
+[EcoRI_site] regex=GAATTC   hits=4
+  - hit#1  start=7  end=12  match=GAATTC
+  - hit#2  start=54  end=59  match=GAATTC
+  - hit#3  start=81  end=86  match=GAATTC
+  - hit#4  start=109  end=114  match=GAATTC
+
+============================================================
+> dna_seq2_random_like   kind=DNA   length=133
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=0
+  (no matches)
+
+[EcoRI_site] regex=GAATTC   hits=2
+  - hit#1  start=30  end=35  match=GAATTC
+  - hit#2  start=84  end=89  match=GAATTC
+
+============================================================
+> dna_seq3_short   kind=DNA   length=36
+------------------------------------------------------------
+[TATA_box] regex=TATA[AT]A[AT]   hits=0
+  (no matches)
+
+[polyA_signal] regex=AATAAA   hits=1
+  - hit#1  start=31  end=36  match=AATAAA
+
+[EcoRI_site] regex=GAATTC   hits=1
+  - hit#1  start=7  end=12  match=GAATTC
+
+============================================================
+> prot_seq1_kinase_like   kind=PROTEIN   length=65
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=5
+  - hit#1  start=33  end=36  match=NQST
+  - hit#2  start=37  end=40  match=NVTK
+  - hit#3  start=48  end=51  match=NQST
+  - hit#4  start=54  end=57  match=NQST
+  - hit#5  start=58  end=61  match=NVTS
+
+[Proline_directed_phospho] regex=[ST]P   hits=3
+  - hit#1  start=21  end=22  match=TP
+  - hit#2  start=42  end=43  match=TP
+  - hit#3  start=61  end=62  match=SP
+
+[RGD_integrin_binding] regex=RGD   hits=3
+  - hit#1  start=11  end=13  match=RGD
+  - hit#2  start=28  end=30  match=RGD
+  - hit#3  start=63  end=65  match=RGD
+
+============================================================
+> prot_seq2_glycoprotein_like   kind=PROTEIN   length=64
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=13
+  - hit#1  start=4  end=7  match=NQST
+  - hit#2  start=8  end=11  match=NVTV
+  - hit#3  start=13  end=16  match=NQST
+  - hit#4  start=17  end=20  match=NVTV
+  - hit#5  start=21  end=24  match=NQST
+  - hit#6  start=25  end=28  match=NVTN
+  - hit#7  start=29  end=32  match=NSTA
+  - hit#8  start=35  end=38  match=NVTN
+  - hit#9  start=39  end=42  match=NSTV
+  - hit#10  start=46  end=49  match=NQST
+  - hit#11  start=50  end=53  match=NVTV
+  - hit#12  start=54  end=57  match=NQST
+  - hit#13  start=58  end=61  match=NVTV
+
+[Proline_directed_phospho] regex=[ST]P   hits=0
+  (no matches)
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=62  end=64  match=RGD
+
+============================================================
+> prot_seq3_short   kind=PROTEIN   length=21
+------------------------------------------------------------
+[N_glycosylation] regex=N[^P][ST][^P]   hits=2
+  - hit#1  start=5  end=8  match=NVTN
+  - hit#2  start=9  end=12  match=NSTA
+
+[Proline_directed_phospho] regex=[ST]P   hits=1
+  - hit#1  start=16  end=17  match=TP
+
+[RGD_integrin_binding] regex=RGD   hits=1
+  - hit#1  start=19  end=21  match=RGD
+
+======================== END OF MATCHES ========================

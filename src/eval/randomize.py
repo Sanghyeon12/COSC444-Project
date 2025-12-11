@@ -9,12 +9,6 @@ SequenceMap = Dict[str, str]
 
 
 def randomize_sequence(seq: str, rng: random.Random | None = None) -> str:
-    """
-    Return a randomized version of a sequence.
-
-    The function preserves the multiset of characters
-    (same letters, different order).
-    """
     if rng is None:
         rng = random.Random()
 
@@ -27,11 +21,6 @@ def randomize_sequences(
     sequences: Mapping[str, str],
     rng: random.Random | None = None,
 ) -> SequenceMap:
-    """
-    Randomize all sequences in a mapping {seq_id: sequence}.
-
-    Character composition of each sequence is preserved.
-    """
     if rng is None:
         rng = random.Random()
 

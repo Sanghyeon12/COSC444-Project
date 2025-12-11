@@ -9,7 +9,6 @@ import statistics
 
 @dataclass
 class ComparisonMetrics:
-    """Summary comparison for one motif."""
     motif: str
     real_count: int
     mean_random: float
@@ -22,11 +21,6 @@ class ComparisonMetrics:
 def count_matches_by_motif(
     matches: Sequence[Mapping[str, Any]],
 ) -> Dict[str, int]:
-    """
-    Count how many matches are observed for each motif.
-
-    Each match is expected to have a 'motif' key.
-    """
     counts: Dict[str, int] = {}
     for match in matches:
         motif = str(match["motif"])
@@ -35,11 +29,6 @@ def count_matches_by_motif(
 
 
 def summarize_trial_counts(trial_counts: Sequence[int]) -> tuple[float, float, int, int]:
-    """
-    Compute mean, std, min, max for a list of counts.
-
-    Uses population standard deviation (pstdev).
-    """
     if not trial_counts:
         return 0.0, 0.0, 0, 0
 
@@ -53,13 +42,6 @@ def summarize_trial_counts(trial_counts: Sequence[int]) -> tuple[float, float, i
 
 
 def compute_lift(real_count: int, mean_random: float) -> float | None:
-    """
-    Compute enrichment (lift) = real_count / mean_random.
-
-    Returns:
-      * None if there is no sensible value (real=0 and mean_random=0)
-      * +inf if mean_random is 0 but real_count > 0
-    """
     if mean_random == 0.0:
         if real_count == 0:
             return None
@@ -72,9 +54,6 @@ def build_comparison(
     real_counts: Mapping[str, int],
     random_counts: Mapping[str, Sequence[int]],
 ) -> Dict[str, ComparisonMetrics]:
-    """
-    Build comparison metrics for each motif from real and random counts.
-    """
     comparison: Dict[str, ComparisonMetrics] = {}
 
     motif_names = set(real_counts.keys()) | set(random_counts.keys())

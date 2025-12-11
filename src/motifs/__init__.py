@@ -1,9 +1,3 @@
-"""
-src.motifs package
-
-Motif loading and IUPAC handling helpers.
-"""
-
 from __future__ import annotations
 
 from .motif_loader import load_motifs

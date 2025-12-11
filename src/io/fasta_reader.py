@@ -7,7 +7,6 @@ from typing import Iterable, Iterator, List, Optional, TextIO, Union
 
 @dataclass(frozen=True)
 class FastaRecord:
-    """A single FASTA record."""
     id: str
     description: str
     sequence: str
@@ -18,7 +17,6 @@ class FastaRecord:
 
 
 def _iter_fasta_lines(handle: TextIO) -> Iterator[str]:
-    """Yield non-empty, stripped lines from a FASTA stream."""
     for raw in handle:
         line = raw.strip()
         if not line:
@@ -27,15 +25,6 @@ def _iter_fasta_lines(handle: TextIO) -> Iterator[str]:
 
 
 def parse_fasta(handle: TextIO) -> Iterator[FastaRecord]:
-    """
-    Parse a FASTA stream into FastaRecord objects.
-
-    Rules:
-    - Lines starting with '>' begin a new record.
-    - Sequence lines may be multiline.
-    - Sequences are uppercased and whitespace removed.
-    - Raises ValueError if format is invalid.
-    """
     seq_id: Optional[str] = None
     desc: str = ""
     seq_chunks: List[str] = []
@@ -73,12 +62,6 @@ def parse_fasta(handle: TextIO) -> Iterator[FastaRecord]:
 def read_fasta(
     source: Union[str, Path, TextIO]
 ) -> List[FastaRecord]:
-    """
-    Read FASTA records from a file path or an already-open handle.
-
-    Returns a list of FastaRecord objects.
-    For tuple format (seq_id, sequence), use: [(r.id, r.sequence) for r in read_fasta(...)]
-    """
     if hasattr(source, "read"):
         return list(parse_fasta(source))  # type: ignore[arg-type]
 

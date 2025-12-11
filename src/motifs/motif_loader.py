@@ -1,14 +1,3 @@
-"""
-motif_loader.py - Sanghyeon (Person 2)
-
-Utilities for loading built-in DNA / protein motifs from the JSON files in
-the top-level ``motifs/`` directory.
-
-Each JSON file should map motif names to *IUPAC / regex* pattern strings.
-We translate any IUPAC codes to plain regular expressions and optionally
-compile them with :mod:`re`.
-"""
-
 from __future__ import annotations
 
 import json
@@ -30,25 +19,6 @@ def _motifs_dir() -> Path:
 
 
 def _load_raw_json(kind: str) -> Dict[str, str]:
-    """Load the raw motif definitions from ``motifs/<kind>.json``.
-
-    Parameters
-    ----------
-    kind:
-        Either ``"dna"`` or ``"protein"`` (case-insensitive).
-
-    Returns
-    -------
-    dict
-        Mapping of motif name → pattern string (still IUPAC / regex).
-
-    Raises
-    ------
-    FileNotFoundError
-        If the JSON file cannot be found.
-    ValueError
-        If ``kind`` is not recognised.
-    """
     kind_lower = kind.lower()
     if kind_lower not in {"dna", "protein"}:
         raise ValueError(f"Unknown motif kind: {kind!r} (expected 'dna' or 'protein')")
@@ -64,27 +34,6 @@ def _load_raw_json(kind: str) -> Dict[str, str]:
 
 
 def load_motifs(kind: str, *, compiled: bool = True) -> Mapping[str, re.Pattern | str]:
-    """Load built-in motifs for the given alphabet.
-
-    Parameters
-    ----------
-    kind:
-        Either ``"dna"`` or ``"protein"``.
-    compiled:
-        If ``True`` (default), return a mapping of motif name → compiled
-        :class:`re.Pattern`. If ``False``, return motif name → regex *string*.
-
-    Returns
-    -------
-    Mapping[str, Pattern | str]
-        The loaded motif definitions.
-
-    Notes
-    -----
-    - The JSON values are treated as IUPAC / regex strings. Any recognised
-      IUPAC codes are expanded using :func:`iupac_to_regex`, but existing
-      regex constructs like ``[AT]`` or ``[^P]`` are preserved.
-    """
     raw = _load_raw_json(kind)
     kind_lower = kind.lower()
 

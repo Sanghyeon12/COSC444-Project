@@ -1,11 +1,3 @@
-"""
-IUPAC code handling for DNA and protein motifs.
-
-This module provides dictionaries mapping IUPAC codes to the set of concrete
-letters they represent, and a helper that converts an IUPAC-encoded motif
-string into a regular expression pattern.
-"""
-
 from __future__ import annotations
 
 from typing import Dict
@@ -64,18 +56,6 @@ PROTEIN_IUPAC: Dict[str, str] = {
 
 
 def _lookup_table(kind: str) -> Dict[str, str]:
-    """Return the appropriate IUPAC table for ``kind``.
-
-    Parameters
-    ----------
-    kind:
-        Either ``"dna"`` or ``"protein"`` (case-insensitive).
-
-    Raises
-    ------
-    ValueError
-        If an unknown kind is supplied.
-    """
     kind_lower = kind.lower()
     if kind_lower == "dna":
         return DNA_IUPAC
@@ -85,20 +65,6 @@ def _lookup_table(kind: str) -> Dict[str, str]:
 
 
 def iupac_to_regex(pattern: str, kind: str) -> str:
-    """Translate an IUPAC motif string into a regular expression.
-
-    This function is intentionally *conservative*: it only expands known
-    IUPAC codes to character classes. Characters that are not recognised
-    as IUPAC codes (including regex metacharacters like ``[`` or ``*``)
-    are copied through untouched.
-
-    Examples
-    --------
-    >>> iupac_to_regex("ATNG", "dna")
-    'AT[ACGT]G'
-    >>> iupac_to_regex("N[^P][ST][^P]", "protein")
-    'N[^P][ST][^P]'
-    """
     table = _lookup_table(kind)
     out_parts: list[str] = []
 

@@ -47,21 +47,6 @@ PROTEIN = Alphabet("PROTEIN", PROTEIN_ALPHABET)
 
 
 def detect_alphabet(seq: str, allow_ambiguous: bool = False) -> AlphabetType:
-    """
-    Guess whether a sequence is DNA or protein.
-
-    Heuristic:
-    - If sequence contains protein-only characters (not in DNA alphabet):
-      * If it also has a significant proportion of A, C, G, T (DNA-like), it's mixed -> UNKNOWN
-      * Otherwise, if valid protein -> PROTEIN
-    - If sequence only contains characters in DNA alphabet (A, C, G, T):
-      * If valid DNA -> DNA
-    - Otherwise -> UNKNOWN
-
-    Note: Since A, C, G, T are in both alphabets, sequences with only these
-    characters will be classified as DNA. Sequences with protein-specific
-    amino acids will be classified as PROTEIN unless they look mixed.
-    """
     s = seq.strip().upper()
     if not s:
         return "UNKNOWN"
@@ -111,7 +96,6 @@ def detect_alphabet(seq: str, allow_ambiguous: bool = False) -> AlphabetType:
 
 
 def validate_sequence(seq: str, alphabet: Alphabet, allow_ambiguous: bool = False) -> None:
-    """Raise ValueError if sequence violates the alphabet."""
     if not alphabet.validate(seq, allow_ambiguous=allow_ambiguous):
         bad = sorted(set(seq.upper()) - alphabet.symbols)
         raise ValueError(
@@ -121,21 +105,5 @@ def validate_sequence(seq: str, alphabet: Alphabet, allow_ambiguous: bool = Fals
 
 
 def detect_kind(seq: str) -> str:
-    """
-    Detect if a sequence is DNA or protein, returning lowercase string.
-
-    This is a convenience wrapper around detect_alphabet that returns
-    lowercase "dna" or "protein" (or "unknown") for compatibility with main.py.
-
-    Parameters
-    ----------
-    seq : str
-        The sequence to classify.
-
-    Returns
-    -------
-    str
-        One of "dna", "protein", or "unknown" (all lowercase).
-    """
     result = detect_alphabet(seq)
     return result.lower() if result != "UNKNOWN" else "unknown"

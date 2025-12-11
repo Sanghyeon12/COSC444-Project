@@ -29,19 +29,7 @@ def run_baseline(
     trials: int = 10,
     seed: int | None = None,
 ) -> BaselineResult:
-    """
-    Run baseline evaluation.
-
-    Args:
-        sequences: Mapping from seq_id -> sequence string.
-        scan_func: Function that runs the scanner and returns
-                   a list of match dicts with a 'motif' key.
-        trials: Number of randomization trials.
-        seed: Optional RNG seed for reproducibility.
-
-    Returns:
-        BaselineResult with real counts, random counts, and comparison metrics.
-    """
+    
     rng = random.Random(seed)
 
     # Real data scan
